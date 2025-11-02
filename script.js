@@ -182,6 +182,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Set initial language
   updateLanguage();
+
+  // Mobile menu functionality
+  const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  mobileMenuToggle.addEventListener("click", () => {
+    mobileMenuToggle.classList.toggle("active");
+    navLinks.classList.toggle("active");
+  });
+
+  // Close mobile menu when clicking on a link
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenuToggle.classList.remove("active");
+      navLinks.classList.remove("active");
+    });
+  });
+
+  // Close mobile menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (
+      !navLinks.contains(e.target) &&
+      !mobileMenuToggle.contains(e.target) &&
+      navLinks.classList.contains("active")
+    ) {
+      mobileMenuToggle.classList.remove("active");
+      navLinks.classList.remove("active");
+    }
+  });
 });
 
 // Smooth scrolling
