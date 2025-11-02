@@ -1,6 +1,7 @@
 // Language translations
 const translations = {
   en: {
+    nav_name: "Bojidar Georgiev",
     nav_home: "Home",
     nav_about: "About",
     nav_skills: "Skills",
@@ -54,6 +55,7 @@ const translations = {
     form_success: "Thank you for your message! I will get back to you soon.",
   },
   bg: {
+    nav_name: "Божидар Георгиев",
     nav_home: "Начало",
     nav_about: "За мен",
     nav_skills: "Умения",
