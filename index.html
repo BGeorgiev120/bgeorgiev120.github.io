@@ -51,7 +51,14 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
       <div class="hero-content">
-        <h1 class="glitch" data-text="B.GEORGIEV">B.GEORGIEV</h1>
+        <div class="hero-label">
+          <span>👋</span>
+          <span data-translate="hero_greeting">Hello, I'm</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="title-line">Bojidar</span>
+          <span class="title-line highlight">Georgiev</span>
+        </h1>
         <p class="hero-subtitle" data-translate="hero_subtitle">
           Full Stack Developer | Bot Creator | Server Architect
         </p>
@@ -63,21 +70,45 @@
           >
           <span class="tag" data-translate="tag_python">Python Expert</span>
         </div>
-        <a href="#contact" class="cta-button" data-translate="cta_button"
-          >Get In Touch</a
-        >
+        <div class="hero-cta">
+          <a href="#contact" class="cta-primary" data-translate="cta_button"
+            >Get In Touch</a
+          >
+          <a href="#skills" class="cta-secondary" data-translate="view_work"
+            >View Work</a
+          >
+        </div>
       </div>
-      <div class="hero-bg">
-        <div class="floating-shape shape-1"></div>
-        <div class="floating-shape shape-2"></div>
-        <div class="floating-shape shape-3"></div>
+      <div class="hero-visual">
+        <div class="code-block">
+          <div class="code-header">
+            <span class="code-dot"></span>
+            <span class="code-dot"></span>
+            <span class="code-dot"></span>
+          </div>
+          <pre
+            class="code-content"
+          ><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name:</span> <span class="code-string">"bojkata120"</span>,
+  <span class="code-prop">skills:</span> [<span class="code-string">"Python"</span>, <span class="code-string">"JavaScript"</span>],
+  <span class="code-prop">passion:</span> <span class="code-string">"Building Amazing Things"</span>
+};</code></pre>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span data-translate="scroll">Scroll Down</span>
+        <div class="scroll-line"></div>
       </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
       <div class="container">
-        <h2 class="section-title" data-translate="about_title">About Me</h2>
+        <div class="section-header">
+          <span class="section-number">01.</span>
+          <h2 class="section-title" data-translate="about_title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
         <div class="about-content">
           <div class="about-text">
             <p class="fade-in" data-translate="about_p1">
@@ -95,6 +126,13 @@
               custom Minecraft servers, and various other technical solutions
               that bring ideas to life.
             </p>
+            <div class="certification-badge">
+              <span class="badge-icon">🎓</span>
+              <div class="badge-content">
+                <strong>SoftUni Python Graduate</strong>
+                <span>Certified Developer</span>
+              </div>
+            </div>
           </div>
           <div class="about-stats">
             <div class="stat-card">
@@ -123,74 +161,102 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
       <div class="container">
-        <h2 class="section-title" data-translate="skills_title">
-          Skills & Expertise
-        </h2>
+        <div class="section-header">
+          <span class="section-number">02.</span>
+          <h2 class="section-title" data-translate="skills_title">
+            Skills & Expertise
+          </h2>
+          <div class="section-line"></div>
+        </div>
         <div class="skills-grid">
           <div class="skill-card">
-            <div class="skill-icon">🌐</div>
-            <h3 data-translate="skill_web_title">Web Development</h3>
+            <div class="skill-header">
+              <span class="skill-icon">🌐</span>
+              <h3 data-translate="skill_web_title">Web Development</h3>
+            </div>
             <p data-translate="skill_web_desc">
               Building responsive, modern websites with HTML, CSS, JavaScript,
               and various frameworks
             </p>
             <div class="skill-bar">
-              <div class="skill-progress" data-progress="90"></div>
+              <div class="skill-progress" data-progress="90">
+                <span class="progress-label">90%</span>
+              </div>
             </div>
           </div>
           <div class="skill-card">
-            <div class="skill-icon">🐍</div>
-            <h3 data-translate="skill_python_title">Python Programming</h3>
+            <div class="skill-header">
+              <span class="skill-icon">🐍</span>
+              <h3 data-translate="skill_python_title">Python Programming</h3>
+            </div>
             <p data-translate="skill_python_desc">
               SoftUni certified Python developer with expertise in automation,
               scripting, and backend development
             </p>
             <div class="skill-bar">
-              <div class="skill-progress" data-progress="95"></div>
+              <div class="skill-progress" data-progress="95">
+                <span class="progress-label">95%</span>
+              </div>
             </div>
           </div>
           <div class="skill-card">
-            <div class="skill-icon">🤖</div>
-            <h3 data-translate="skill_discord_title">Discord Bots</h3>
+            <div class="skill-header">
+              <span class="skill-icon">🤖</span>
+              <h3 data-translate="skill_discord_title">Discord Bots</h3>
+            </div>
             <p data-translate="skill_discord_desc">
               Creating custom Discord bots with advanced features, moderation
               tools, and interactive commands
             </p>
             <div class="skill-bar">
-              <div class="skill-progress" data-progress="88"></div>
+              <div class="skill-progress" data-progress="88">
+                <span class="progress-label">88%</span>
+              </div>
             </div>
           </div>
           <div class="skill-card">
-            <div class="skill-icon">⛏️</div>
-            <h3 data-translate="skill_minecraft_title">Minecraft Servers</h3>
+            <div class="skill-header">
+              <span class="skill-icon">⛏️</span>
+              <h3 data-translate="skill_minecraft_title">Minecraft Servers</h3>
+            </div>
             <p data-translate="skill_minecraft_desc">
               Setting up and managing custom Minecraft servers with plugins,
               mods, and unique gameplay
             </p>
             <div class="skill-bar">
-              <div class="skill-progress" data-progress="85"></div>
+              <div class="skill-progress" data-progress="85">
+                <span class="progress-label">85%</span>
+              </div>
             </div>
           </div>
           <div class="skill-card">
-            <div class="skill-icon">⚙️</div>
-            <h3 data-translate="skill_backend_title">Backend Development</h3>
+            <div class="skill-header">
+              <span class="skill-icon">⚙️</span>
+              <h3 data-translate="skill_backend_title">Backend Development</h3>
+            </div>
             <p data-translate="skill_backend_desc">
               Building robust APIs, databases, and server-side logic for
               scalable applications
             </p>
             <div class="skill-bar">
-              <div class="skill-progress" data-progress="87"></div>
+              <div class="skill-progress" data-progress="87">
+                <span class="progress-label">87%</span>
+              </div>
             </div>
           </div>
           <div class="skill-card">
-            <div class="skill-icon">🎨</div>
-            <h3 data-translate="skill_design_title">UI/UX Design</h3>
+            <div class="skill-header">
+              <span class="skill-icon">🎨</span>
+              <h3 data-translate="skill_design_title">UI/UX Design</h3>
+            </div>
             <p data-translate="skill_design_desc">
               Crafting beautiful, intuitive interfaces with attention to detail
               and user experience
             </p>
             <div class="skill-bar">
-              <div class="skill-progress" data-progress="80"></div>
+              <div class="skill-progress" data-progress="80">
+                <span class="progress-label">80%</span>
+              </div>
             </div>
           </div>
         </div>
@@ -200,9 +266,13 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container">
-        <h2 class="section-title" data-translate="contact_title">
-          Let's Work Together
-        </h2>
+        <div class="section-header">
+          <span class="section-number">03.</span>
+          <h2 class="section-title" data-translate="contact_title">
+            Let's Work Together
+          </h2>
+          <div class="section-line"></div>
+        </div>
         <div class="contact-content">
           <div class="contact-text">
             <p data-translate="contact_intro">
@@ -212,15 +282,28 @@
             <div class="contact-info">
               <div class="contact-item">
                 <span class="contact-icon">📧</span>
-                <span data-translate="contact_email">Available via Email</span>
+                <div>
+                  <strong data-translate="contact_email"
+                    >Available via Email</strong
+                  >
+                  <span class="contact-detail">bojkata120@example.com</span>
+                </div>
               </div>
               <div class="contact-item">
                 <span class="contact-icon">💬</span>
-                <span>Discord: bojkata120</span>
+                <div>
+                  <strong>Discord</strong>
+                  <span class="contact-detail">bojkata120</span>
+                </div>
               </div>
               <div class="contact-item">
                 <span class="contact-icon">🌐</span>
-                <span data-translate="contact_portfolio">Online Portfolio</span>
+                <div>
+                  <strong data-translate="contact_portfolio"
+                    >Online Portfolio</strong
+                  >
+                  <span class="contact-detail">Available 24/7</span>
+                </div>
               </div>
             </div>
           </div>
@@ -248,7 +331,16 @@
               class="submit-button"
               data-translate="form_submit"
             >
-              Send Message
+              <span>Send Message</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M4 10H16M16 10L10 4M16 10L10 16"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </button>
           </form>
         </div>
