@@ -330,26 +330,26 @@ window.addEventListener("scroll", () => {
 });
 
 // Cursor glow effect
-document.addEventListener("mousemove", (e) => {
-  const glow = document.createElement("div");
-  glow.style.cssText = `
-    position: fixed;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(0, 242, 255, 0.1), transparent 70%);
-    pointer-events: none;
-    left: ${e.clientX - 150}px;
-    top: ${e.clientY - 150}px;
-    z-index: 9999;
-    transition: opacity 0.3s;
-  `;
-  document.body.appendChild(glow);
-  setTimeout(() => {
-    glow.style.opacity = "0";
-    setTimeout(() => glow.remove(), 300);
-  }, 100);
-});
+// document.addEventListener("mousemove", (e) => {
+//   const glow = document.createElement("div");
+//   glow.style.cssText = `
+//     position: fixed;
+//     width: 300px;
+//     height: 300px;
+//     border-radius: 50%;
+//     background: radial-gradient(circle, rgba(0, 242, 255, 0.1), transparent 70%);
+//     pointer-events: none;
+//     left: ${e.clientX - 150}px;
+//     top: ${e.clientY - 150}px;
+//     z-index: 9999;
+//     transition: opacity 0.3s;
+//   `;
+//   document.body.appendChild(glow);
+//   setTimeout(() => {
+//     glow.style.opacity = "0";
+//     setTimeout(() => glow.remove(), 300);
+//   }, 100);
+// });
 
 // Initial typing effect on page load
 document.addEventListener("DOMContentLoaded", () => {
