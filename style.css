@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #0a0a0f;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Навигация */
+.glavna_navigaciq {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(15, 15, 25, 0.95);
+  padding: 20px 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(100, 150, 255, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.moe_ime {
+  font-size: 26px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.menu_butoni {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.menu_link {
+  color: #b0b0b0;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu_link:hover {
+  color: #667eea;
+}
+
+/* Начална част */
+.nachalo_sekciq {
+  min-height: 100vh;
+  padding: 140px 8% 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+}
+
+.lqva_chast {
+  flex: 1;
+}
+
+.zdravei_text {
+  color: #667eea;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.golqmo_ime {
+  font-size: 58px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.opisanie_text {
+  font-size: 20px;
+  color: #a0a0a0;
+  margin-bottom: 35px;
+}
+
+.bytonche {
+  display: inline-block;
+  padding: 14px 35px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.bytonche:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
+}
+
+.dqsna_chast {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.kartichka_kod {
+  background: rgba(20, 20, 35, 0.8);
+  border: 2px solid rgba(102, 126, 234, 0.3);
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 450px;
+  font-family: "Courier New", monospace;
+  font-size: 15px;
+  line-height: 1.9;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.kod_keyword {
+  color: #ff6b9d;
+}
+.kod_var {
+  color: #c792ea;
+}
+.kod_string {
+  color: #89ddff;
+}
+
+/* За мен */
+.za_men_sekciq {
+  padding: 100px 8%;
+  background: #0f0f18;
+}
+
+.zaglavie {
+  font-size: 42px;
+  margin-bottom: 50px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  font-weight: 700;
+}
+
+.za_men_grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.tekst_chast p {
+  color: #c0c0c0;
+  margin-bottom: 25px;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.accent {
+  color: #667eea;
+}
+
+.sertifikat {
+  background: rgba(102, 126, 234, 0.1);
+  border: 2px solid rgba(102, 126, 234, 0.3);
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.sertifikat strong {
+  color: #667eea;
+  display: block;
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.cert_status {
+  color: #a0a0a0;
+}
+
+.statistiki {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.stat_kutiq {
+  background: rgba(20, 20, 35, 0.6);
+  border: 2px solid rgba(102, 126, 234, 0.3);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.stat_kutiq:hover {
+  border-color: #667eea;
+  transform: translateY(-5px);
+}
+
+.golqmo_chislo {
+  font-size: 44px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.malyk_tekst {
+  color: #a0a0a0;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+/* Умения */
+.umeniq_sekciq {
+  padding: 100px 8%;
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+}
+
+.kartichki_umeniq {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.umenie_kartichka {
+  background: rgba(20, 20, 35, 0.6);
+  border: 2px solid rgba(102, 126, 234, 0.2);
+  padding: 35px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.umenie_kartichka:hover {
+  border-color: #667eea;
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
+}
+
+.ikona {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.umenie_kartichka h3 {
+  color: #667eea;
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.umenie_kartichka p {
+  color: #b0b0b0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Контакт */
+.kontakt_sekciq {
+  padding: 100px 8%;
+  background: #0f0f18;
+}
+
+.kontakt_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.kontakt_info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.kontakt_opisanie {
+  color: #b0b0b0;
+  font-size: 17px;
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.kontakt_red {
+  background: rgba(20, 20, 35, 0.6);
+  border: 2px solid rgba(102, 126, 234, 0.3);
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.kontakt_red strong {
+  color: #667eea;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.kontakt_text {
+  color: #b0b0b0;
+}
+
+.forma {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pole,
+.golymo_pole {
+  padding: 16px;
+  background: rgba(20, 20, 35, 0.6);
+  border: 2px solid rgba(102, 126, 234, 0.2);
+  border-radius: 10px;
+  color: #e0e0e0;
+  font-size: 15px;
+  font-family: inherit;
+  transition: 0.3s;
+}
+
+.pole:focus,
+.golymo_pole:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 15px rgba(102, 126, 234, 0.3);
+}
+
+.golymo_pole {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.izprati_buton {
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.izprati_buton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
+}
+
+/* Футър */
+.footer {
+  padding: 35px 8%;
+  text-align: center;
+  color: #888;
+  border-top: 1px solid rgba(100, 150, 255, 0.2);
+  background: #0a0a0f;
+}
+
+/* Адаптивност */
+@media (max-width: 768px) {
+  .nachalo_sekciq {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 120px;
+  }
+
+  .golqmo_ime {
+    font-size: 42px;
+  }
+
+  .za_men_grid,
+  .kontakt_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu_butoni {
+    gap: 15px;
+  }
+}
