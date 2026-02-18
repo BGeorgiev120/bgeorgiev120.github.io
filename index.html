@@ -1,166 +1,352 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bg">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Божидар Георгиев - Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Навигация -->
+    <div class="noise-overlay"></div>
     <nav class="glavna_navigaciq">
+      <div class="nav-logo"></div>
+      <button class="hamburger-menu" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <ul class="menu_butoni">
-        <li><a href="#nachalo" class="menu_link">Начало</a></li>
-        <li><a href="#za-men" class="menu_link">За мен</a></li>
-        <li><a href="#umeniq" class="menu_link">Умения</a></li>
-        <li><a href="#kontakt" class="menu_link">Контакт</a></li>
+        <li>
+          <a href="#nachalo" class="menu_link" data-text="Начало">Начало</a>
+        </li>
+        <li>
+          <a href="#za-men" class="menu_link" data-text="За мен">За мен</a>
+        </li>
+        <li>
+          <a href="#umeniq" class="menu_link" data-text="Умения">Умения</a>
+        </li>
+        <li>
+          <a href="#proekti" class="menu_link" data-text="Проекти">Проекти</a>
+        </li>
+        <li>
+          <a href="#kontakt" class="menu_link" data-text="Контакт">Контакт</a>
+        </li>
       </ul>
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        <span class="status-text">Available</span>
+      </div>
     </nav>
 
-    <!-- Начална секция -->
     <section id="nachalo" class="nachalo_sekciq">
-      <div class="lqva_chast">
-        <div class="zdravei_text">👋 Здравей, аз съм</div>
-        <h1 class="golqmo_ime">Божидар Георгиев</h1>
-        <p class="opisanie_text">
-          Ученик програмист | Завършил Python в SoftUni
-        </p>
-        <a href="#kontakt" class="bytonche">Свържи се с мен</a>
+      <div class="hero-bg-grid"></div>
+      <div class="hero-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
       </div>
+
+      <div class="lqva_chast">
+        <div class="zdravei_text">
+          <span class="wave-emoji">👋</span>
+          <span class="type-in">Здравей, аз съм</span>
+        </div>
+        <h1 class="golqmo_ime">
+          <span class="glitch" data-text="Божидар">Божидар</span>
+          <br />
+          <span class="glitch name-second" data-text="Георгиев">Георгиев</span>
+        </h1>
+        <a href="#kontakt" class="bytonche magnetic-btn">
+          <span class="btn-text">Свържи се с мен</span>
+          <span class="btn-arrow">→</span>
+        </a>
+      </div>
+
       <div class="dqsna_chast">
-        <div class="kartichka_kod">
-          <span class="kod_keyword">клас</span>
-          <span class="kod_var">Ученик</span>:<br />
-          &nbsp;&nbsp;<span class="kod_keyword">име</span> =
-          <span class="kod_string">"Божидар"</span><br />
-          &nbsp;&nbsp;<span class="kod_keyword">клас</span> =
-          <span class="kod_string">"7"</span><br />
-          &nbsp;&nbsp;<span class="kod_keyword">умения</span> = [<span
-            class="kod_string"
-            >"Python"</span
-          >, <span class="kod_string">"HTML"</span>,
-          <span class="kod_string">"CSS"</span>]<br />
-          &nbsp;&nbsp;<span class="kod_keyword">мечти</span> =
-          <span class="kod_string">"Програмист"</span>
+        <div class="kartichka_kod floating-card">
+          <div class="card-header">
+            <div class="card-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="card-title">~/projects/bojidar.py</span>
+            <span class="card-lang">Python</span>
+          </div>
+          <div class="code-wrapper">
+            <div class="line-numbers" aria-hidden="true">
+              <span style="--d: 0.1s">1</span>
+              <span style="--d: 0.2s">2</span>
+              <span style="--d: 0.3s">3</span>
+              <span style="--d: 0.4s">4</span>
+              <span style="--d: 0.5s">5</span>
+              <span style="--d: 0.6s">6</span>
+              <span style="--d: 0.7s">7</span>
+              <span style="--d: 0.8s">8</span>
+              <span style="--d: 0.9s">9</span>
+              <span style="--d: 1s">10</span>
+            </div>
+            <div class="code-body">
+              <div class="code-line" style="--d: 0.1s">
+                <span class="kod_keyword">class</span>
+                <span class="kod_var"> Ученик</span
+                ><span class="kod_punct">:</span>
+              </div>
+              <div class="code-line code-indent-1" style="--d: 0.2s">
+                <span class="kod_keyword">def</span>
+                <span class="kod_fn"> __init__</span
+                ><span class="kod_punct">(self):</span>
+              </div>
+              <div class="code-line code-indent-2" style="--d: 0.3s">
+                <span class="kod_self">self</span
+                ><span class="kod_punct">.</span
+                ><span class="kod_prop">name</span>
+                <span class="kod_op">=</span>
+                <span class="kod_string">"Божидар"</span>
+              </div>
+              <div class="code-line code-indent-2" style="--d: 0.4s">
+                <span class="kod_self">self</span
+                ><span class="kod_punct">.</span
+                ><span class="kod_prop">grade</span>
+                <span class="kod_op">=</span>
+                <span class="kod_number">7</span>
+              </div>
+              <div class="code-line code-indent-2" style="--d: 0.5s">
+                <span class="kod_self">self</span
+                ><span class="kod_punct">.</span
+                ><span class="kod_prop">skills</span>
+                <span class="kod_op">=</span>
+                <span class="kod_punct">[</span>
+              </div>
+              <div class="code-line code-indent-3" style="--d: 0.6s">
+                <span class="kod_string">"Python"</span
+                ><span class="kod_punct">,</span>
+                <span class="kod_string">"HTML"</span
+                ><span class="kod_punct">,</span>
+              </div>
+              <div class="code-line code-indent-3" style="--d: 0.7s">
+                <span class="kod_string">"CSS"</span
+                ><span class="kod_punct">,</span>
+                <span class="kod_string">"JS"</span>
+              </div>
+              <div class="code-line code-indent-2" style="--d: 0.8s">
+                <span class="kod_punct">]</span>
+              </div>
+              <div class="code-line code-indent-2" style="--d: 0.9s">
+                <span class="kod_self">self</span
+                ><span class="kod_punct">.</span
+                ><span class="kod_prop">goal</span>
+                <span class="kod_op">=</span>
+                <span class="kod_string">"Програмист"</span>
+              </div>
+              <div class="code-line cursor-line code-indent-1" style="--d: 1s">
+                <span class="kod_fn">print</span><span class="kod_punct">(</span
+                ><span class="kod_string">"Hello, World!"</span
+                ><span class="kod_punct">)</span
+                ><span class="cursor-blink">▋</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="footer-item"
+              ><span class="footer-dot green-dot"></span>UTF-8</span
+            >
+            <span class="footer-item">Python 3.12</span>
+            <span class="footer-item footer-right">Ln 10, Col 28</span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- За мен -->
-    <section id="za-men" class="za_men_sekciq">
-      <h2 class="zaglavie">За мен</h2>
+    <section id="za-men" class="za_men_sekciq reveal-section">
+      <div class="section-label">01</div>
+      <h2 class="zaglavie split-title">За мен</h2>
       <div class="za_men_grid">
         <div class="tekst_chast">
-          <p>
+          <p class="reveal-text">
             Здравейте! Казвам се
-            <strong class="accent">Божидар Георгиев</strong>! Уча в ОУ "Св. Св.
-            Кирил и Методий" 7Д клас и обичам програмирането.
+            <strong class="accent">Божидар Георгиев</strong> и съм ученик в 7
+            клас на ОУ "Св. Св. Кирил и Методий". Програмирането е моята страст
+            и начин да изразя креативността си.
           </p>
-          <p>
-            Завърших курса по Python в
-            <strong class="accent">SoftUni</strong>, където научих много за
-            програмирането и как се пишат различни програми.
+          <p class="reveal-text">
+            През последната година завърших курса по Python в
+            <strong class="accent">SoftUni</strong>, където изградих солидна
+            основа в програмирането. Работих по различни проекти и научих как да
+            превръщам идеите си в реалност чрез код.
           </p>
-          <p>
-            Интересувам се от уеб дизайн , правене на уебсайтове и python
-            разработка. Обичам да експериментирам с различни технологии и да
-            създавам нови проекти.
+          <p class="reveal-text">
+            Обичам да създавам красиви и функционални уебсайтове. Комбинирам
+            HTML, CSS и JavaScript, за да правя интерактивни интерфейси, които
+            са едновременно елегантни и лесни за ползване.
           </p>
-          <div class="sertifikat">
-            <strong>🎓 SoftUni Python Курс</strong>
-            <span class="cert_status">Завършен успешно</span>
-          </div>
-        </div>
-        <div class="statistiki">
-          <div class="stat_kutiq">
-            <div class="golqmo_chislo">15+</div>
-            <div class="malyk_tekst">Проекта направени</div>
-          </div>
-          <div class="stat_kutiq">
-            <div class="golqmo_chislo">1</div>
-            <div class="malyk_tekst">Година опит</div>
-          </div>
-          <div class="stat_kutiq">
-            <div class="golqmo_chislo">100%</div>
-            <div class="malyk_tekst">Желание за учене</div>
-          </div>
+
+          <h3
+            class="reveal-text"
+            style="color: var(--accent); margin-top: 30px; margin-bottom: 15px"
+          >
+            🎯 Моите цели
+          </h3>
+          <p class="reveal-text">
+            След завършване на 7 клас искам да продължа обучението си в
+            професионална гимназия по информатика. Мечтая да стана
+            <strong class="accent">UX/UI дизайнер</strong> и да създавам
+            изключителни дигитални преживявания за потребителите.
+          </p>
+          <p class="reveal-text">
+            В близко бъдеще планирам да изуча React, Figma и Adobe XD, за да
+            разширя уменията си в уеб разработката и дизайна. Искам да работя в
+            технологична компания, където мога да допринасям за иновативни
+            проекти и непрекъснато да се развивам.
+          </p>
         </div>
       </div>
     </section>
 
     <!-- Умения -->
-    <section id="umeniq" class="umeniq_sekciq">
-      <h2 class="zaglavie">Моите умения</h2>
+    <section id="umeniq" class="umeniq_sekciq reveal-section">
+      <div class="section-label">02 — Умения</div>
+      <h2 class="zaglavie split-title">Моите умения</h2>
       <div class="kartichki_umeniq">
-        <div class="umenie_kartichka">
+        <div class="umenie_kartichka reveal-card" style="--card-delay: 0s">
+          <div class="card-glow"></div>
           <div class="ikona">🌐</div>
-          <h3>Уеб дизайн</h3>
+          <h3>Web Design</h3>
           <p>
-            Правя уебсайтове с HTML и CSS. Обичам да експериментирам с цветове и
-            дизайн.
+            Създавам модерни и отзивчиви уебсайтове, които изглеждат страхотно
+            на всяко устройство. Владея HTML5, CSS3 и работя с анимации.
           </p>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--skill-w: 80%"></div>
+          </div>
         </div>
-        <div class="umenie_kartichka">
+        <div class="umenie_kartichka reveal-card" style="--card-delay: 0.1s">
+          <div class="card-glow"></div>
           <div class="ikona">🐍</div>
           <h3>Python</h3>
           <p>
-            Завърших курс в SoftUni и мога да пиша различни програми на Python.
+            Разработвам приложения и скриптове на Python. Умея да работя с
+            библиотеки, файлове и създавам решения на алгоритмични задачи.
           </p>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--skill-w: 75%"></div>
+          </div>
         </div>
-        <div class="umenie_kartichka">
-          <div class="ikona">💻</div>
-          <h3>Основи на програмирането</h3>
+        <div class="umenie_kartichka reveal-card" style="--card-delay: 0.2s">
+          <div class="card-glow"></div>
+          <div class="ikona">☕</div>
+          <h3>Java</h3>
           <p>
-            Разбирам как работят програмите, променливите, циклите и функциите.
+            Разработвам мощни приложения на Java. Работя с класове, обекти и
+            различни Java библиотеки за създаване на надежни решения.
           </p>
-        </div>
-        <div class="umenie_kartichka">
-          <div class="ikona">🎨</div>
-          <h3>Креативност</h3>
-          <p>Обичам да измислям нови неща и да ги реализирам в проектите си.</p>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--skill-w: 70%"></div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Проекти -->
+    <section id="proekti" class="proekti_sekciq reveal-section">
+      <div class="section-label">03 — Проекти</div>
+      <h2 class="zaglavie split-title">Моите проекти</h2>
+      <div class="kartichki_proekti">
+        <a
+          href="https://fitnespro.is-great.net/"
+          target="_blank"
+          class="proekt_kartichka reveal-card"
+          style="--card-delay: 0s"
+        >
+          <div class="card-glow"></div>
+          <div class="proekt-icon">💪</div>
+          <h3>FitnesPro</h3>
+          <p>
+            Модерна уеб платформа за фитнес тренировки. Включва персонализирани
+            програми, брой на упражненията и проследяване на прогреса.
+          </p>
+          <span class="visit-btn">Посети проекта →</span>
+        </a>
+        <a
+          href="https://constructionteam.xyz/"
+          target="_blank"
+          class="proekt_kartichka reveal-card"
+          style="--card-delay: 0.1s"
+        >
+          <div class="card-glow"></div>
+          <div class="proekt-icon">🏗️</div>
+          <h3>Construction Team</h3>
+          <p>
+            Професионален уебсайт за строителна компания. Показва портфолио от
+            проекти, услуги и информация за контакт с тима.
+          </p>
+          <span class="visit-btn">Посети проекта →</span>
+        </a>
+      </div>
+    </section>
+
     <!-- Контакт -->
-    <section id="kontakt" class="kontakt_sekciq">
-      <h2 class="zaglavie">Свържи се с мен</h2>
+    <section id="kontakt" class="kontakt_sekciq reveal-section">
+      <div class="section-label">04 — Контакт</div>
+      <h2 class="zaglavie split-title">Свържи се с мен</h2>
       <div class="kontakt_grid">
         <div class="kontakt_info">
-          <p class="kontakt_opisanie">
-            Имаш въпроси или искаш да разговаряме за програмиране? Пиши ми!
+          <p class="kontakt_opisanie reveal-text">
+            Имаш идея за проект или искаш да си поговорим за технологии и
+            програмиране? С удоволствие ще отговоря на всички твои въпроси!
           </p>
-          <div class="kontakt_red">
-            <strong>📧 Имейл</strong>
-            <span class="kontakt_text">goergievbojidar@gmail.com</span>
-          </div>
-          <div class="kontakt_red">
-            <strong>🎓 Образование</strong>
-            <span class="kontakt_text">7 клас | SoftUni Python</span>
-          </div>
-          <div class="kontakt_red">
-            <strong>💡 Интереси</strong>
-            <span class="kontakt_text">Програмиране и технологии</span>
+          <div class="kontakt_red reveal-card" style="--card-delay: 0s">
+            <div class="kontakt-icon">📧</div>
+            <div>
+              <strong>Имейл</strong>
+              <span class="kontakt_text"
+                ><a
+                  href="/cdn-cgi/l/email-protection"
+                  class="__cf_email__"
+                  data-cfemail="c1a6aea4b3a6a8a4b7a3aeaba8a5a0b381a6aca0a8adefa2aeac"
+                  >[email&#160;protected]</a
+                ></span
+              >
+            </div>
           </div>
         </div>
-        <form class="forma" id="moqta_forma">
-          <input type="text" class="pole" placeholder="Твоето име" required />
-          <input type="email" class="pole" placeholder="Твоят имейл" required />
-          <textarea
-            class="golymo_pole"
-            placeholder="Твоето съобщение"
-            required
-          ></textarea>
-          <button type="submit" class="izprati_buton">Изпрати съобщение</button>
+        <form
+          class="forma reveal-card"
+          id="moqta_forma"
+          style="--card-delay: 0.1s"
+        >
+          <div class="form-field">
+            <input type="text" class="pole" placeholder=" " required />
+            <label>Твоето име</label>
+          </div>
+          <div class="form-field">
+            <input type="email" class="pole" placeholder=" " required />
+            <label>Твоят имейл</label>
+          </div>
+          <div class="form-field">
+            <textarea class="golymo_pole" placeholder=" " required></textarea>
+            <label>Твоето съобщение</label>
+          </div>
+          <button type="submit" class="izprati_buton magnetic-btn">
+            <span class="btn-text">Изпрати съобщение</span>
+            <span class="btn-arrow">→</span>
+          </button>
         </form>
       </div>
     </section>
 
     <!-- Футър -->
     <footer class="footer">
-      <p>&copy; 2025 Божидар Георгиев. Всички права запазени.</p>
+      <div class="footer-inner">
+        <p>&copy; 2025 Божидар Георгиев. Всич�</p>
+      </div>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
