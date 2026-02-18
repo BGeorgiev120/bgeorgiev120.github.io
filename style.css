@@ -1251,6 +1251,34 @@ body {
   font-size: 13px;
 }
 
+.kontakt_text a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.kontakt_text a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.kontakt_text a:hover {
+  color: var(--accent-3);
+}
+
+.kontakt_text a:hover::after {
+  width: 100%;
+}
+
 .forma {
   display: flex;
   flex-direction: column;
